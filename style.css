@@ -1,0 +1,274 @@
+*{margin: 0; padding: 0;}
+body{
+  margin: 0px;
+  font-family: Arial;
+}
+
+    .menu{ 
+      background: #323233;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      }
+      .menuleft{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+        .linksocial{
+          color: white;
+          text-decoration: none;
+        }
+        .linksocial:hover{
+              color:#c9c9c9;
+            }
+        .caseleft{
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+        }
+
+          .menuemail{
+            
+          }
+            .imgemail{
+              margin-top: 5px;
+              margin-right: 10px;
+              height: 20px;
+            }
+          
+          .menuphone{
+            padding-left: 50px;
+            }
+            .imgphone{
+              margin-top: 5px;
+              margin-right: 5px;
+              height: 20px;
+              }
+      
+      .menuright{
+        margin-bottom: 5px;
+        display: flex;
+      }
+        .menusocial{
+
+        }
+          .imginstagram{
+            margin-top: 10px; 
+            margin-right: 10px;
+            height: 30px;
+          }
+          .imglinkedin{
+            margin-top: 10px; 
+            margin-right: 10px;
+            height: 32px;
+          }
+          .imglattes{
+            margin-top: 10px; 
+            margin-right: 10px;
+            height: 32px;
+          }
+          .imgwhatsapp{
+            margin-top: 10px; 
+            margin-right: 10px;
+            height: 32px;
+          }  
+      
+      #imgmenumobile{
+        display: none;
+      }
+      .ulmenumobile li ul{
+        display:none;
+      }
+      .ulmenumobile{
+        list-style: none;
+        margin: 0px;
+        padding; 0px;
+      }
+
+
+
+    .menu2{
+
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      }
+      .linksmenu{
+        margin-right: 50px;
+        text-decoration: none;
+        color: #323233;
+      }
+      .linksmenu:hover{
+        color:#5d5db9;
+      }
+
+    .caixa1{
+      background: url(imagens/background.png);
+      background-size: cover;
+      height: auto;
+      text-align: center;
+    }
+      #mylogo{
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+      }
+
+
+      .div_lbox{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 10px; 
+      }
+        .min{
+          width: 200px;
+          padding: 10px;
+          transition: 0.3s linear;
+        }
+        .min:hover{
+          width: 300px;
+          transition: 0.3s linear;
+        }
+          .lbox{
+            visibility: hidden;
+            opacity: 0;
+          }
+          .lbox:target{
+            visibility: visible;
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.75);
+
+            position: fixed;
+          }
+            .box_img{
+              margin-top: 70px;
+              text-align: center;
+            }
+            box_img img{
+              opacity: 0;
+            }
+
+            .larg{
+              width: 600px;
+            
+            }
+            .btn {
+              color: white;
+              font-family: Arial;
+              text-decoration: none;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              font-size: 50px;
+              text-align: center;
+            }
+              #prev{
+                top:40%;
+                left: 5%;
+              }
+              #close{
+                top:1%;
+                right: 1%;
+                font-size: 40px;
+              }
+              #next{
+                top: 40%;
+                right: 5%;
+              }
+      
+
+
+
+
+/* RESPONSIVIDADE MOBILE:*/
+
+@media(max-width: 800px){
+  .menu{
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+    .menuleft{
+      display: none;
+    } 
+
+  .navmenumobile:hover{
+    background: #00000098; 
+    padding-bottom: 15px;
+    transition: 0.3s linear;
+  }
+  .navmenumobile{
+    transition: 0.3s linear;
+  }
+    #imgmenumobile{
+      margin: 5px;
+      height: 30px;
+       display: unset;
+    }
+      .ulmenumobile{
+          list-style: none;
+        }
+          .ulmenumobile li{
+           list-style: none;           
+          } 
+            .ulmenumobile li ul{
+              text-align: left;
+            }       
+          .ulmenumobile li:hover ul{
+            display:block;
+          }
+            .limenumobile{              
+              margin: 10px;
+            }
+            .linksmenumobile{
+              color: white;
+              text-decoration: none;
+              margin-left: 50px;
+              font-size: 20px;            
+            }
+            .linksmenumobile:hover{
+              color:#c9c9c9;
+            }
+  .menu2{
+     display: none;
+      }
+
+  .caixa1{
+
+    }
+    #mylogo{
+      margin-top: 50px;
+      height: 170px;
+    }
+
+  .box_img{
+    margin-top: 150px;
+    text-align: center;
+  }
+    .min{
+      width: 120px;
+      padding: 5px;
+    }
+    .min:hover{
+        width: 120px;
+    }
+      .larg{
+        width: 300px;
+      }
+        #prev{
+          top:80%;
+          left: 20%;
+        }
+
+        #next{
+          top: 80%;
+          right: 20%;
+        }
